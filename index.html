@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Slot Machine</title>
+    <meta name="description" content="Adam's Coffee Slot Machine'">
+    <meta name="author" content="Adam Paul">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="stylesheet" href="css/reels.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="icon" type="image/png" href="assets/coffee-mini.png">
+</head>
+
+<body>
+    <div class="background">
+        <aside class="social">
+            <a href="http://500px.com/ajp0032">
+                <img src="assets/500px.svg" alt="500px" />
+            </a>
+
+            <a href="http://twitter.com/adamjpaul">
+                <img src="assets/twitter.svg" alt="Twitter" />
+            </a>
+        </aside>
+
+        <section class="main">
+            <div class="slot-machine">
+                <section class="reel-container">
+                    <div class="reel" id="reel1">
+                        <div class="face one">
+                            <div class="coffee"></div>
+                            <div class="drink-text">Coffee Maker</div>
+                        </div>
+                        <div class="face two">
+                            <div class="tea"></div>
+                            <div class="drink-text">Teapot</div>
+                        </div>
+                        <div class="face three">
+                            <div class="espresso"></div>
+                            <div class="drink-text">Espresso Machine</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="reel-container">
+                    <div class="reel" id="reel2">
+                        <div class="face one">
+                            <div class="coffee"></div>
+                            <div class="drink-text">Coffee Filter</div>
+                        </div>
+                        <div class="face two">
+                            <div class="tea"></div>       
+                            <div class="drink-text">Tea Strainer</div>                     
+                        </div>
+                        <div class="face three">
+                            <div class="espresso"></div>
+                            <div class="drink-text">Espresso Tamper</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="reel-container">
+                    <div class="reel" id="reel3">
+                        <div class="face one">
+                            <div class="coffee"></div>
+                            <div class="drink-text">Coffee Grounds</div>
+                        </div>
+                        <div class="face two">
+                            <div class="tea"></div>
+                            <div class="drink-text">Loose Tea</div>
+                        </div>
+                        <div class="face three espresso-beans">
+                            <div class="espresso"></div>
+                            <div class="drink-text">Espresso Beans</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="controls">
+                <button id="spinBtn" class="btn" onclick="spin()">SPIN!</button>
+
+                <div class="speed-switch">
+                    <input type="checkbox" name="speed-switch" class="speed-switch-checkbox" id="speed" checked>
+                    <label class="speed-switch-label" for="speed">
+                        <span class="speed-switch-inner"></span>
+                        <span class="speed-switch-handle"></span>
+                    </label>
+                </div>
+
+            </section>
+        </section> <!-- end .main -->
+
+        <section id="toast">
+            <div class="cup"></div>
+
+            <div class="winnings">
+                <span><em>You won a cup of...</em></span>
+                <span id="freeCup">ESPRESSO!</span>
+            </div>
+        </section>
+    </div> <!-- end .background -->
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

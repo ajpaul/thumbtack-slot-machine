@@ -1,0 +1,14 @@
+/* Some very basic media queries. I'm just demonstrating that I can
+use them, even though they aren't really a requirement here */
+
+@media screen and (max-width: 767px) {
+    .reel-container {
+        display: block;
+        margin: 15px auto;
+        left: -22px;
+    }
+
+    .main {
+        top: 38%;
+    }
+}

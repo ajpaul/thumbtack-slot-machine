@@ -1,0 +1,84 @@
+/********************/
+/*  ELEMENT STYLES  */
+/********************/
+#toast {
+    visibility: hidden; 
+    min-width: 350px; 
+    margin-left: -175px; 
+    color: #fff; 
+    text-align: center;
+    border-radius: 20px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+    background: -webkit-linear-gradient(bottom left, #276272, #3b93ab);
+    background: -o-linear-gradient(bottom left, #276272, #3b93ab);
+    background: linear-gradient(to top right, #276272, #3b93ab);
+    border-bottom: 2px solid #276272;
+    -webkit-box-shadow: inset 0 -2px #276272;
+    box-shadow: inset 0 -2px #276272;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#toast.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#freeCup {
+    font-size: 2em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/******************/
+/*  CLASS STYLES  */
+/******************/
+.cup {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /*don't forget prefixes*/
+  background-image: url("../assets/coffee.png");
+  background-position: center center;
+  background-size: cover;
+  float: left;
+}
+
+.winnings {
+    width: 225px;
+    float: right;
+    height: 60px;
+    position: relative;
+    top: 50%;
+    transform: translateY(35%);
+}
+
+.winnings > span {
+    width: 225px;
+    display: block;
+}
+
+/*******************/
+/*    KEYFRAMES    */
+/*******************/
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
