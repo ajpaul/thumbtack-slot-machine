@@ -1,2 +1,2 @@
 # thumbtack-slot-machine
-My attempt at Thumbtack's slot machine code challenge. I built this to have no dependencies or 3rd party references so you can just click and run index.html.
+My attempt at Thumbtack's slot machine code challenge. I built this to have no dependencies because I was working on an Angular 2 project at the time and the dependencies were a nightmare to deal with.
