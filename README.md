@@ -5,4 +5,4 @@ Here's what it looks like:
 
 
 
-![Slot machine](http://imgur.com/a/Gk8JC)
+![Slot machine][http://imgur.com/a/Gk8JC]
