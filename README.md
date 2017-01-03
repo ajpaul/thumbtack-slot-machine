@@ -3,6 +3,4 @@ My attempt at Thumbtack's slot machine code challenge. I built this to have no d
 
 Here's what it looks like:
 
-
-
-![Slot machine][http://imgur.com/a/Gk8JC]
+http://imgur.com/a/Gk8JC
